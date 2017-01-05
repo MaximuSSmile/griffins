@@ -1,0 +1,68 @@
+%div.backgroundslides
+  
+  %div.slides{ :style => "background-color: red;"}
+  /
+    %ul
+      %li
+        = image_tag "s2.jpg", :class => "slidersbackground"
+      /
+        %div 
+          Security
+      %li
+        = image_tag "s10.jpg", :class => "slidersbackground"
+      /
+        %div 
+          Security
+      %li
+        = image_tag "s6.jpg", :class => "slidersbackground"
+      /
+        %div 
+          Security
+      %li
+        = image_tag "s10.jpg", :class => "slidersbackground"
+      /
+        %div 
+          Security
+%div.bodygriffin
+  %div.griffinlogo
+    = image_tag "s6.jpg", :class => "logoimage2"
+  %div.tabbed
+    %div.logoimageblock
+      = image_tag "grifonbluewithname.svg", :class => "logoimage"
+    %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-1", :checked=> true}
+      %label{:for=>"tab-nav-1"}
+        %p О НАС
+    %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-2"}
+      %label{:for=>"tab-nav-2"} 
+        %p Услуги
+    %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-3"}
+      %label{:for=>"tab-nav-3"} 
+        %p Клиентам
+    %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-4"}
+      %label{:for=>"tab-nav-4"} 
+        %p Контакты
+    .bodyamsgroup
+    %div{ :class => ['tabs']}
+      %div
+        %h2=@a
+      %div 
+        %h2=@a  
+        =video_tag "test.mp4"             
+      %div 
+        %h2=@a
+      %div
+        %div.amsmap.right
+          %iframe{:allowfullscreen => "", :frameborder => "0", :height => "350", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.730208596946!2d30.431012037035497!3d50.46474843315227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc777aaaf995bf05!2z0KTQu9C-0YDQsCDQn9Cw0YDQug!5e0!3m2!1sru!2sua!4v1479894063059", :style => "border:0", :width => "450"}
+          .ams_contacts
+            %h2=@a
+            %li
+            %li
+              %div.number +380633699197     
+            %li
+              %h3=@a
+        
+            
+
+             
+
+   

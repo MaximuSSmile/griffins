@@ -1,0 +1,378 @@
+// Place all the styles related to the griffins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #636160;
+  background-image: url(image_path('bamb1.jpg'));
+  color: #eee;
+  font: 1em 'PT Sans', sans-serif;
+}
+
+.backgroundslides {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+::selection {
+  background-color: #F87911;
+}
+
+.bodygriffin {
+	position: absolute;
+	  width: 70%;
+      height: auto;
+      margin: 0px 15%;
+      z-index: 2;
+      
+}
+
+.griffinlogo {
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 79.8%;
+	height: 14vw;
+	margin-top: 5px;
+	margin-right: 0.5%;
+
+}
+		.logoimage2 {
+			width: 100%;
+			height: 100%;
+		}
+
+.logoimageblock {
+	width: 18.2%;
+	 margin-right: 0.5%;
+     margin-left: 0.5%;
+	display: inline-block;
+	float: left;
+}
+		.logoimage {
+			width: 100%;
+		}
+
+
+.tabbed {
+  width: 100%;
+  margin: 5px auto;
+  background: none;
+  display: inline-block;
+}
+.tabbed > h2 {
+
+}
+
+.tabbed > input {
+  display: none;
+}
+
+.tabbed > label {
+
+      text-align: center;
+      font-size: 2.1vw;
+	width: 19.2%;
+	height: 3.5vw;
+	vertical-align: text-bottom;
+  display: block;
+  float: left;
+  padding: 1vw 20px;
+  margin-top: 14.5vw;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  cursor: pointer;
+  transition: background-color .3s;
+
+}
+		.tabbed > label > p {
+			padding: 0;
+			margin: -0.5vw;
+		}
+
+.tabbed > label:hover,
+.tabbed > input:checked + label {
+    text-decoration: none;
+    	background-color: #2f52a0;
+    font-size: 2.2vw;
+    color: rgb(194, 195, 196) ;
+  }
+
+.tabs {
+  clear: both;
+  perspective: 600px;
+}
+
+.tabs > div {
+  width: 99%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  margin-top: 10px;
+  border: solid 3px rgb(41, 77, 143);
+  position: absolute;
+  height: auto;
+  min-height: 800px;
+  padding: 10px 30px 40px;
+background-image: url('pointswhite.svg');
+  line-height: 1.4em;
+  opacity: 0;
+  background-color: rgb(194, 195, 196);
+  transform: rotateX(-20deg);
+  transform-origin: top center;
+  transition: opacity .3s, transform 1s;
+  z-index: 0;
+}
+
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4){
+  transform: rotateX(0deg);
+  opacity: 1;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .tabbed { width: 400px }
+  .tabbed > label { display: none }
+  .tabs > div {
+    width: 400px;
+    border: none;
+    padding: 0;
+    opacity: 1;
+    position: relative;
+    transform: none;
+    margin-bottom: 60px;
+  }
+  .tabs > div h2 {
+    border-bottom: 2px solid #4EC6DE;
+    padding-bottom: .5em;
+  }
+}
+
+
+
+/* SLiDERS!!!!!!!!!!!!!!!!!!!!!! */
+
+.slidersbackground {
+	height: 2000px;
+	width: 2000px;
+}
+
+.slides {
+    height: 100%;
+
+
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+}
+      .slides ul {
+          list-style:none;
+          position:relative;
+              margin-left: -40px;
+
+      }
+      /* Кадры анимации #anim_slides */
+
+      @-webkit-keyframes anim_slides {
+          0% {
+              opacity:0;
+          }
+          6% {
+              opacity:1;
+          }
+          24% {
+              opacity:1;
+          }
+          30% {
+              opacity:0;
+          }
+          100% {
+              opacity:0;
+          }
+      }
+
+      @-moz-keyframes anim_slides {
+          0% {
+              opacity:0;
+          }
+          6% {
+              opacity:1;
+          }
+          24% {
+              opacity:1;
+          }
+          30% {
+              opacity:0;
+          }
+          100% {
+              opacity:0;
+          }
+      } 
+
+      .slides ul li {
+          opacity:0;
+          position:absolute;
+          top:0;
+
+          /* анимация css3 */
+          -webkit-animation-name: anim_slides;
+          -webkit-animation-duration: 24.0s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-direction: normal;
+          -webkit-animation-delay: 0;
+          -webkit-animation-play-state: running;
+          -webkit-animation-fill-mode: forwards;
+       
+          -moz-animation-name: anim_slides;
+          -moz-animation-duration: 24.0s;
+          -moz-animation-timing-function: linear;
+          -moz-animation-iteration-count: infinite;
+          -moz-animation-direction: normal;
+          -moz-animation-delay: 0;
+          -moz-animation-play-state: running;
+          -moz-animation-fill-mode: forwards;
+      }
+
+       
+
+      /* Задержки css3 */
+      .slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
+          -webkit-animation-delay: 6.0s;
+          -moz-animation-delay: 6.0s;
+      }
+
+      .slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
+          -webkit-animation-delay: 12.0s;
+          -moz-animation-delay: 12.0s;
+      }
+
+      .slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
+          -webkit-animation-delay: 18.0s;
+          -moz-animation-delay: 18.0s;
+      }
+
+      .slides ul li img {
+          display:block;
+
+      }
+
+       
+
+      /* Кадры анимации #anim_titles */
+
+      @-webkit-keyframes anim_titles {
+          0% {
+              left:100%;
+              opacity:0;
+          }
+
+          5% {
+              left:10%;
+              opacity:1;
+          }
+
+          20% {
+              left:10%;
+              opacity:1;
+          }
+
+          25% {
+              left:100%;
+              opacity:0;
+          }
+
+          100% {
+              left:100%;
+              opacity:0;
+          }
+      }
+
+      @-moz-keyframes anim_titles {
+          0% {
+              left:100%;
+              opacity:0;
+          }
+
+          5% {
+              left:10%;
+              opacity:1;
+          }
+
+          20% {
+              left:10%;
+              opacity:1;
+          }
+
+          25% {
+              left:100%;
+              opacity:0;
+          }
+
+          100% {
+              left:100%;
+              opacity:0;
+          }
+      }
+
+       
+
+      .slides ul li div {
+          background-color: #18ef6e;
+          border-radius:3px 3px 3px 3px;
+          box-shadow:0 0 5px #EBCB79 none;
+          color: #50156E;
+          height: 32px;
+          width: auto;
+          font-size: 20px;
+
+          margin:0 auto;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 5px;
+          position:absolute;
+          top: 265px;
+          width: auto;
+
+
+          /* Анимация css3 */
+
+          -webkit-animation-name: anim_titles;
+
+          -webkit-animation-duration: 24.0s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-direction: normal;
+          -webkit-animation-delay: 0;
+          -webkit-animation-play-state: running;
+          -webkit-animation-fill-mode: forwards;
+       
+          -moz-animation-name: anim_titles;
+          -moz-animation-duration: 24.0s;
+          -moz-animation-timing-function: linear;
+          -moz-animation-iteration-count: infinite;
+          -moz-animation-direction: normal;
+          -moz-animation-delay: 0;
+          -moz-animation-play-state: running;
+          -moz-animation-fill-mode: forwards;
+      }
+      .slides ul li div h2 {
+        margin: 0px;
+      }
+      .slides ul li div p {
+          margin: 0px;
+      }
+
+
