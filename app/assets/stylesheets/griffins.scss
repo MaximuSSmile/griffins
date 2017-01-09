@@ -92,6 +92,7 @@ body {
   margin-left: 0.5%;
   cursor: pointer;
   transition: background-color .3s;
+  background-image: url('plateblue2.svg');
 
 }
 		.tabbed > label > p {
@@ -103,6 +104,8 @@ body {
 .tabbed > input:checked + label {
     text-decoration: none;
     	background-color: #2f52a0;
+      background-image: url('plateblue2.svg'); 
+      background-size: cover;
     font-size: 2.2vw;
     color: rgb(194, 195, 196) ;
   }
@@ -122,10 +125,10 @@ body {
   height: auto;
   min-height: 800px;
   padding: 10px 30px 40px;
-background-image: url('pointswhite.svg');
+background-image: url('cos.svg');
   line-height: 1.4em;
   opacity: 0;
-  background-color: rgb(194, 195, 196);
+  background-color: white;
   transform: rotateX(-20deg);
   transform-origin: top center;
   transition: opacity .3s, transform 1s;
@@ -170,12 +173,11 @@ background-image: url('pointswhite.svg');
 
 .slides {
     height: 100%;
-
-
+      background-color: #2b3f80;
+    background-image: url('pointswhite2.svg');
     overflow: hidden;
     position: relative;
     width: 100%;
-
 }
       .slides ul {
           list-style:none;
