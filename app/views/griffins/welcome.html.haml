@@ -25,13 +25,13 @@
           Security
 %div.bodygriffin
   %div.griffinlogo
-    = image_tag "s6.jpg", :class => "logoimage2"
+    = image_tag "topimage2.svg", :class => "logoimage2"
   %div.tabbed
     %div.logoimageblock
-      = image_tag "shildgrifonbluewithname.svg", :class => "logoimage"
+      = image_tag "logoblue2.svg", :class => "logoimage"
     %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-1", :checked=> true}
-      %label{:for=>"tab-nav-1"}
-        %p О НАС
+      %label{:for=>"tab-nav-1", :style => "background-color: none; border: none; background-image: none; margin-top: 0.1px; height: 18vw;position: relative; z-index: 10"}
+        
     %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-2"}
       %label{:for=>"tab-nav-2"} 
         %p Услуги
@@ -41,15 +41,27 @@
     %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-4"}
       %label{:for=>"tab-nav-4"} 
         %p Контакты
-    .bodyamsgroup
+    .bodyamsgroup{ :style => "background-image: none;  background-color: #f1f2f2; "}
     %div{ :class => ['tabs']}
       %div
-        %h2=@a
+        %h2 ABOUT US
+
       %div 
-        %h2=@a  
-        =video_tag "test.mp4"             
-      %div 
-        %h2=@a
+        %h2 НАШИ УСЛУГИ
+        %h4
+          %li Организация контрольно пропускного режима работников, посетителей и автотранспорта.
+          %li Пересечение попыток несанкционированного доступа посторонних лиц на объёкт.
+          %li Обеспечение сохранности продукции, оборудования и имущества объекта.
+          %li Патрулирование периметра территории.
+          %li Поддержание общественного порядка на территории объекта.
+          %li Комплекс антитеррористических мероприятий.
+          %li Охрана парковок, принадлежащих заведению.
+          %li Помощь администрации и персоналу в чрезвычайных ситуаях.
+          %li Предупреждение кражи, порчи и хищения реализуемой продукции.
+          %li Задержание пправонарушителей и передача их в правоохранительные органы.           
+      %div.experiment
+        %h2 ВИДЫ ОХРАНЯЕМЫХ ОБЪТОВ
+        %h2 КОМПЛЕКС МЕРОПРИЯТИЙ
       %div
         %div.amsmap.right
           %iframe{:allowfullscreen => "", :frameborder => "0", :height => "350", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.730208596946!2d30.431012037035497!3d50.46474843315227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc777aaaf995bf05!2z0KTQu9C-0YDQsCDQn9Cw0YDQug!5e0!3m2!1sru!2sua!4v1479894063059", :style => "border:0", :width => "450"}
