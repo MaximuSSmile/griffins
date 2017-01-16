@@ -123,6 +123,7 @@ body {
 .tabs {
   clear: both;
   perspective: 600px;
+
 }
 
 .tabs > div {
@@ -135,15 +136,16 @@ body {
   height: auto;
   min-height: 800px;
   padding: 10px 30px 40px;
-background-image: url('cos.svg'), url('greybackgr.svg');
+background-image: url('cos.svg'), url('greybackgr2.svg');
 background-size: 100%;
   line-height: 1.4em;
   opacity: 0;
-  background-color: white;
+  
   transform: rotateX(-20deg);
   transform-origin: top center;
   transition: opacity .3s, transform 1s;
   z-index: 0;
+
 }
 
 .experiment {
@@ -193,14 +195,15 @@ background-size: 100%;
 /* SLiDERS!!!!!!!!!!!!!!!!!!!!!! */
 
 .slidersbackground {
-	height: 2000px;
-	width: 2000px;
+	height: 2300px;
+	width: 2300px;
 }
 
 .slides {
     height: 100%;
       background-color: #2b3f80;
-    background-image: url('pointswhite2.svg');
+    background-image: url('bk.jpg');
+    background-size: 100% 100%;
     overflow: hidden;
     position: relative;
     width: 100%;
