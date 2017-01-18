@@ -140,7 +140,7 @@ h4 {
   border: solid 3px rgb(41, 77, 143);
   position: absolute;
   height: auto;
-  min-height: 800px;
+  min-height: 500px;
   padding: 10px 30px 40px;
 background-image: url('cos.svg'), url('greybackgr2.svg');
 background-size: 100%;
@@ -155,7 +155,8 @@ background-size: 100%;
 }
 
 .experiment {
-
+  height: auto;
+  width: 100%;
 }
 
 #tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
@@ -173,9 +174,11 @@ background-size: 100%;
   bottom: 15px;
   width: 100%;
   margin-left: -30px;
+  
 }
       .bottimage {
-        width: 100%
+        width: 100%;
+        padding-top: 50px;
       }
 @media screen and (max-width: 700px) {
   .tabbed { width: 400px }
