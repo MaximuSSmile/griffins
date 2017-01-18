@@ -180,16 +180,28 @@ background-size: 100%;
         width: 100%;
         padding-top: 50px;
       }
-      .adress {
-        padding-left: 2%;
-        position: absolute;
-        top: 61%;
-        color: rgb(194, 195, 196);
-      }
-          .adress > h5 {
-            padding: 0px;
-            margin: 0px;
+          .adress {
+            padding-left: 2%;
+            position: absolute;
+            top: 61%;
+            color: rgb(194, 195, 196);
           }
+              .adress > h5 {
+                padding: 0px;
+                margin: 0px;
+              }
+          .contact {
+            float: left;
+            padding-left: 2%;
+            position: absolute;
+            top: 61%;
+            right: 2%;
+            color: rgb(194, 195, 196);
+          }
+              .contact > h5 {
+                padding: 0px;
+                margin: 0px;
+              }
 @media screen and (max-width: 700px) {
   .tabbed { width: 400px }
   .tabbed > label { display: none }
