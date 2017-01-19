@@ -30,8 +30,7 @@
     %div.logoimageblock
       = image_tag "logoblue3.svg", :class => "logoimage"
     %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-1", :checked=> true}
-      %label{:for=>"tab-nav-1", :style => "background-color: none; border: none; background-image: none; margin-top: 0.1px; height: 18vw;position: relative; z-index: 10"}
-        
+      %label{:for=>"tab-nav-1", :style => "background-color: none; border: none; background-image: none; margin-top: 0.1px; height: 18vw;position: relative; z-index: 10"}        
     %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-2"}
       %label{:for=>"tab-nav-2"} 
         %p О Компании
@@ -60,8 +59,13 @@
             %h5 Одесса, Украина
             %h5 ул. Вице-Адмирала Жукова д.21/23, оф.51
           .contact{:style => "font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;"}
-            %h5 +38 (048) 796-37-36
-            %h5 info@grifon.com.ua
+            %li.numbers 
+              %h5 +38 (048) 796-37-36
+              %h5 info@grifon.com.ua
+            %li.vk 
+              = link_to image_tag( 'vk.svg', :class => 'icons' ), "https://vk.com/grifon.ohorona", target: '_blank'
+            %li.face  
+              = link_to image_tag( 'face.svg', :class => 'icons' ), "https://www.facebook.com/Grifon.Ohorona/", target: '_blank'
 
       %div 
         %div.info{:style => "height:100%; margin-bottom: 10%;"}
@@ -80,8 +84,13 @@
             %h5 Одесса, Украина
             %h5 ул. Вице-Адмирала Жукова д.21/23, оф.51
           .contact{:style => "font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;"}
-            %h5 +38 (048) 796-37-36
-            %h5 info@grifon.com.ua
+            %li.numbers 
+              %h5 +38 (048) 796-37-36
+              %h5 info@grifon.com.ua
+            %li.vk 
+              = link_to image_tag( 'vk.svg', :class => 'icons' ), "https://vk.com/grifon.ohorona", target: '_blank'
+            %li.face  
+              = link_to image_tag( 'face.svg', :class => 'icons' ), "https://www.facebook.com/Grifon.Ohorona/", target: '_blank'
             
       %div.experiment
         %div.info{:style => "height:100%; margin-bottom: 45vw;"}
@@ -135,8 +144,13 @@
             %h5 Одесса, Украина
             %h5 ул. Вице-Адмирала Жукова д.21/23, оф.51
           .contact{:style => "font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;"}
-            %h5 +38 (048) 796-37-36
-            %h5 info@grifon.com.ua
+            %li.numbers 
+              %h5 +38 (048) 796-37-36
+              %h5 info@grifon.com.ua
+            %li.vk 
+              = link_to image_tag( 'vk.svg', :class => 'icons' ), "https://vk.com/grifon.ohorona", target: '_blank'
+            %li.face  
+              = link_to image_tag( 'face.svg', :class => 'icons' ), "https://www.facebook.com/Grifon.Ohorona/", target: '_blank'
       %div
         %div.info{:style => "height:450px; margin-bottom: 10%;"}
           %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.317512171416!2d30.732397416392324!3d46.48202497912622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319741452f41%3A0x311333542eab1c10!2z0L_RgNC-0LLRg9C70L7QuiDQktGW0YbQtS3QkNC00LzRltGA0LDQu9CwINCW0YPQutC-0LLQsCwgMjEvMjMsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1484720418396", :style => "border:0; float: left", :width => "60%"}
@@ -145,6 +159,10 @@
             %h3 ул. Вице-Адмирала Жукова д.21/23, оф.51
             %h3{:style => "font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;"} +38 (048) 796-37-36
             %h3 info@grifon.com.ua
+            %li.vk 
+              = link_to image_tag( 'vk.svg', :class => 'icons' ), "https://vk.com/grifon.ohorona", target: '_blank'
+            %li.face  
+              = link_to image_tag( 'face.svg', :class => 'icons' ), "https://www.facebook.com/Grifon.Ohorona/", target: '_blank'
 
    
         %div.bottomimage

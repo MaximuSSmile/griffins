@@ -183,7 +183,7 @@ background-size: 100%;
           .adress {
             padding-left: 2%;
             position: absolute;
-            top: 61%;
+            top: 60%;
             color: rgb(194, 195, 196);
           }
               .adress > h5 {
@@ -191,18 +191,47 @@ background-size: 100%;
                 margin: 0px;
               }
           .contact {
-            float: left;
+            display: inline-block;
             padding-left: 2%;
             position: absolute;
-            top: 61%;
+            top: 60%;
             right: 2%;
             color: rgb(194, 195, 196);
           }
               .contact > h5 {
                 padding: 0px;
                 margin: 0px;
-              }
 
+              }
+              .contact > li {
+                display: inline;
+                float: right;
+              }
+      .numbers {
+        width: 130px;
+        height: 3vw;
+        margin-left: 10px;
+      } 
+        .numbers> h5 {
+                padding: 0px;
+                margin: 0px;
+              }
+      .vk {
+
+
+        width: 28px;
+                margin-left: 8px;
+
+      }
+      .face {
+
+        width: 28px;
+                margin-left: 8px;
+      }
+            .icons {
+              width: 100%;
+              
+            }
 .usluga {
     display: inline-block;
     float: left;
