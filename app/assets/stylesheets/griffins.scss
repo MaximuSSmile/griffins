@@ -201,7 +201,6 @@ background-size: 100%;
               .contact > h5 {
                 padding: 0px;
                 margin: 0px;
-
               }
               .contact > li {
                 display: inline;
@@ -213,25 +212,45 @@ background-size: 100%;
         margin-left: 10px;
       } 
         .numbers> h5 {
-                padding: 0px;
-                margin: 0px;
-              }
+          padding: 0px;
+          margin: 0px;
+      }
       .vk {
-
-
         width: 28px;
-                margin-left: 8px;
-
+        margin-left: 8px;
       }
       .face {
-
         width: 28px;
-                margin-left: 8px;
+        margin-left: 8px;
       }
-            .icons {
-              width: 100%;
-              
-            }
+        .icons {
+          width: 100%;             
+        }
+        .icons:hover {
+      background-color: #a8d4ed;
+      border: 3px solid #a8d4ed;
+      text-decoration: none;
+    }
+
+      .vkblue {
+        display: inline-block;
+        width: 50px;
+        margin-left: 8px;
+      }
+      .faceblue {
+        display: inline-block;
+        width: 50px;
+        margin-left: 8px;
+      }
+        .icons {
+          width: 100%;             
+        }
+        .icons:hover {
+      background-color: #a8d4ed;
+      border: 3px solid #a8d4ed;
+      text-decoration: none;
+    }
+
 .usluga {
     display: inline-block;
     float: left;
