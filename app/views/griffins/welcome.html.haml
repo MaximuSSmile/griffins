@@ -1,28 +1,6 @@
-%div.backgroundslides
-  
-  %div.slides
-  /
-    %ul
-      %li
-        = image_tag "s2.jpg", :class => "slidersbackground"
-      /
-        %div 
-          Security
-      %li
-        = image_tag "s10.jpg", :class => "slidersbackground"
-      /
-        %div 
-          Security
-      %li
-        = image_tag "s6.jpg", :class => "slidersbackground"
-      /
-        %div 
-          Security
-      %li
-        = image_tag "s10.jpg", :class => "slidersbackground"
-      /
-        %div 
-          Security
+%div.background
+
+
 %div.bodygriffin{ :style => "font-family: Georgia, sans-serif;"}
   %div.griffinlogo
     = image_tag "topimage4.svg", :class => "logoimage2"
@@ -30,7 +8,7 @@
     %div.logoimageblock
       = image_tag "logoblue3.svg", :class => "logoimage"
     %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-1", :checked=> true, :style => "background-color: none;", :checked => "background-color: none;"}
-      %label{:for=>"tab-nav-1", :style => "background-color: none; border: none; background-image: none; margin-top: 0.1px; height: 18vw;position: relative; z-index: 10"}        
+      %label{:for=>"tab-nav-1", :style => "background-color: none; border: none; background-image: none; margin-top: 0.1px; height: 310px;position: relative; z-index: 10"}        
     %input{:type=>"radio", :name => "tabs", :id=>"tab-nav-2"}
       %label{:for=>"tab-nav-2"} 
         %p О Компании
@@ -43,16 +21,24 @@
     .bodyamsgroup{ :style => "background-image: none;  background-color: #f1f2f2; "}
     %div{ :class => ['tabs']}
       %div
-        %div.info{:style => "height:100%; margin-bottom: 10%;"}
-          %h2 О Компании
-
-          %h4 Под охраной "Грифон" находятся объекты частной и государственной собственности как в г. Одессе так и в Одесской области. Такие как: базы отдыха, ночные клубы, сеть интерактивных заведений, жилые комплексы, складские помещения, офисные помещение. Также обеспечиваем охрану и правопорядок на массовых развлекательных мероприятиях. 
-
-          %h4 Массовые мероприятия, независимо от масштаба, требуют тщательной организации, важнейшей составляющей которой является обеспечение безопасности и порядка. Наша компания имеет всё необходимое для оказания высококвалифицированных охранных услуг. Учитывает все пожелания клиентов направленные на совершенствование охранной деятельности. Режим работы объекта, количество сотрудников охраны, определяет сам клиент в зависимости от своих потребностей и возможностей и согласовывает их с исполнителем 
-
-          %h4 Главная наша особенность в том что мы молодая и быстро развивающиеся охранная компания в управление которой стоят опытные специалисты в охранной сфере с многолетним опытом в этой сфере. Поэтому мы к каждому клиенту относимся с особым вниманием и уважением.
-
-          %h4 Мы работаем с любыми формами оплаты, как наличной так и безналичной.
+        %div.slides
+          %ul
+            %li
+              = image_tag "viz1.jpg", :class => "slidersbackground"
+              %div 
+                Организация контрольно пропускного режима работников, посетителей и автотранспорта.
+            %li
+              = image_tag "viz6.jpg", :class => "slidersbackground"
+              %div 
+                Патрулирование периметра территории.
+            %li
+              = image_tag "viz3.jpg", :class => "slidersbackground"
+              %div 
+                Охрана парковок, принадлежащих заведению.
+            %li
+              = image_tag "viz4.jpg", :class => "slidersbackground"
+              %div 
+                Задержание правонарушителей и передача их в правоохранительные органы.
         %div.bottomimage
           = image_tag "imgbottomclear.svg", :class => "bottimage"
           .adress
@@ -93,7 +79,7 @@
               = link_to image_tag( 'face.svg', :class => 'icons' ), "https://www.facebook.com/Grifon.Ohorona/", target: '_blank'
             
       %div.experiment
-        %div.info{:style => "height:100%; margin-bottom: 45vw;"}
+        %div.info{:style => "height:100%; margin-bottom: 200px;"}
           %h2 Виды охраняемых объектов
           %h4
             %li Офисы. 

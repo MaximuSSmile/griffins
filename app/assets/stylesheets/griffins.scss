@@ -9,14 +9,15 @@
 }
 
 body {
-  background: #636160;
-  background-image: url(image_path('bamb1.jpg'));
+
+  background-image: url('bk.jpg');
+    background-size: 100%;
   color: #eee;
   font-family: Georgia, sans-serif;
 }
 
 p {
-  font-size: 1.9vw;
+  font-size: 38px;
 }
 h4 {
   text-indent: 20px;
@@ -33,10 +34,10 @@ h4 {
 }
 
 .bodygriffin {
-	position: absolute;
-	  width: 70%;
+	position: relative;
+	  width: 1200px;
       height: auto;
-      margin: 0px 15%;
+      margin: 0px auto;
       z-index: 2;
       
 }
@@ -46,8 +47,8 @@ h4 {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	width: 73.9%;
-	height: 14vw;
+	width: 886px;
+	height: 240px;
 	margin-top: 5px;
 	margin-right: 0.5%;
 
@@ -73,7 +74,7 @@ h4 {
 
 
 .tabbed {
-  width: 100%;
+  width: 1200px;
   margin: 5px auto;
   background: none;
   display: inline-block;
@@ -91,16 +92,17 @@ h4 {
 .tabbed > label {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
       text-align: center;
-      font-size: 2.1vw;
-	width: 24%;
-	height: 3.5vw;
+      font-size: 40px;
+	width: 288px;
+	height: 60px;
 	vertical-align: text-bottom;
   display: block;
   float: left;
-  padding: 1vw 20px;
-  margin-top: 14.5vw;
+  padding: 15px 20px;
+  margin-top: 250px;
   margin-right: 0.5%;
   margin-left: 0.5%;
+  margin-bottom: 0px;
   cursor: pointer;
   transition: background-color .3s;
   background-image: url('plateblue2.svg');
@@ -109,7 +111,7 @@ h4 {
 }
 		.tabbed > label > p {
 			padding: 0;
-			margin-top: -0.6vw;
+			margin-top: -10px;
 		}
 
 .tabbed > label:hover,
@@ -119,10 +121,10 @@ h4 {
       background-image: url('plategrey.svg'); 
       background-size: 100%;
 
-    font-size: 1.7vw;
+    font-size: 34px;
     color: rgb(41, 77, 143) ;
         border: 8px double #294d8f;
-    padding-top: 0.35vw;
+    padding-top: 7px;
    
   }
 
@@ -293,20 +295,25 @@ background-size: 100%;
 
 /* SLiDERS!!!!!!!!!!!!!!!!!!!!!! */
 
-.slidersbackground {
-	height: 2300px;
-	width: 2300px;
+.background {
+	height: 100%;
+	width: 100%;
+  background-image: url('bk.jpg');
+    background-size: 100% 100%;
 }
 
 .slides {
-    height: 100%;
+    height: 500px;
       background-color: #2b3f80;
-    background-image: url('bk.jpg');
-    background-size: 100% 100%;
+    background-size: 100% ;
     overflow: hidden;
     position: relative;
     width: 100%;
 }
+      .slidersbackground {
+          height: 100%;
+          width: 100%;
+      }
       .slides ul {
           list-style:none;
           position:relative;
