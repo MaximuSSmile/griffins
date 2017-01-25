@@ -11,7 +11,7 @@
 body {
 
   background-image: url('bk.jpg');
-    background-size: 100%;
+    background-size: 100% 1405px;
   color: #eee;
   font-family: Georgia, sans-serif;
 }
@@ -141,6 +141,7 @@ h4 {
   margin-right: 0.5%;
   margin-left: 0.5%;
   margin-top: 10px;
+  margin-bottom: 20px;
   border: solid 3px rgb(41, 77, 143);
   position: absolute;
   height: auto;
@@ -259,9 +260,9 @@ background-size: 100%;
 .usluga {
     display: inline-block;
     float: left;
-    width: 20vw;
-    height: 20vw;
-    margin: 0.2vw;
+    width: 366px;
+    height: 335px;
+    margin: 4px;
 }
       .uclugaimg {
         width: 100%;
@@ -270,7 +271,7 @@ background-size: 100%;
       }
       .vizualimg {
         width: 100%;
-        height: 12vw;
+        height: 250px;
       }
 
 @media screen and (max-width: 700px) {
@@ -303,7 +304,7 @@ background-size: 100%;
 }
 
 .slides {
-    height: 550px;
+    height: 600px;
 
     overflow: hidden;
     position: relative;
@@ -317,7 +318,7 @@ background-size: 100%;
       }
 
       .slidersbackground {
-          height: 500px;
+          height: 550px;
           width: 1124px;
       }
       .slides ul {
