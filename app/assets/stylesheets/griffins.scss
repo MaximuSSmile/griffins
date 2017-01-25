@@ -303,16 +303,22 @@ background-size: 100%;
 }
 
 .slides {
-    height: 500px;
-      background-color: #2b3f80;
-    background-size: 100% ;
+    height: 550px;
+
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 1124px;
+    margin-bottom: 110px;
 }
+      .slides > ul > li > h3 {
+        margin-top: 8px;  
+        color: #2b3f80;
+        text-align: center;
+      }
+
       .slidersbackground {
-          height: 100%;
-          width: 100%;
+          height: 500px;
+          width: 1124px;
       }
       .slides ul {
           list-style:none;
