@@ -35,7 +35,7 @@ h4 {
 
 .bodygriffin {
 	position: relative;
-	  width: 1200px;
+	  width: 900px;
       height: auto;
       margin: 0px auto;
       z-index: 2;
@@ -47,8 +47,8 @@ h4 {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	width: 886px;
-	height: 240px;
+	width: 665px;
+	height: 183px;
 	margin-top: 5px;
 	margin-right: 0.5%;
 
@@ -66,7 +66,7 @@ h4 {
 
 }
 		.logoimage {
-			width: 89%;
+			width: 92%;
       margin-left: 5%;
       position: relative;
       z-index: 9;
@@ -74,7 +74,7 @@ h4 {
 
 
 .tabbed {
-  width: 1200px;
+  width: 900px;
   margin: 5px auto;
   background: none;
   display: inline-block;
@@ -92,14 +92,14 @@ h4 {
 .tabbed > label {
   font-family: Geneva, Arial, Helvetica, sans-serif;
       text-align: center;
-      font-size: 38px;
-	width: 288px;
-	height: 60px;
+      font-size: 26px;
+	width: 216px;
+	height: 45px;
 	vertical-align: text-bottom;
   display: block;
   float: left;
-  padding: 5px 20px;
-  margin-top: 250px;
+  padding: 4px 20px;
+  margin-top: 194px;
   margin-right: 0.5%;
   margin-left: 0.5%;
   margin-bottom: 0px;
@@ -121,9 +121,9 @@ h4 {
       background-image: url('plategrey.svg'); 
       background-size: 100%;
 
-    font-size: 34px;
+    font-size: 25px;
     color: rgb(41, 77, 143) ;
-        border: 8px double #294d8f;
+        border: 6px double #294d8f;
     padding-top: 0px;
    
   }
@@ -261,9 +261,10 @@ background-size: 100%;
 .usluga {
     display: inline-block;
     float: left;
-    width: 366px;
-    height: 335px;
-    margin: 4px;
+    text-align: center;
+    width: 269px;
+    height: 275px;
+    margin: 3px;
 }
       .uclugaimg {
         width: 100%;
@@ -272,7 +273,7 @@ background-size: 100%;
       }
       .vizualimg {
         width: 100%;
-        height: 250px;
+        height: 195px;
       }
 
 @media screen and (max-width: 700px) {
@@ -309,8 +310,8 @@ background-size: 100%;
 
     overflow: hidden;
     position: relative;
-    width: 1124px;
-    margin-bottom: 110px;
+    width: 830px;
+    margin-bottom: 15px;
     margin-top: 15px;
 }
       .slides > ul > li > h3 {
@@ -320,8 +321,8 @@ background-size: 100%;
       }
 
       .slidersbackground {
-          height: 600px;
-          width: 1124px;
+          height: 500px;
+          width: 825px;
               border: 3px solid #294d8f;
       }
       .slides ul {
